@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Abel|Encode+Sans+Condensed|Libre+Baskerville" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -15,22 +16,29 @@
     /* Remove the navbar's default margin-bottom and rounded borders */ 
 body{
     font-family: 'Libre Baskerville', 'Encode Sans Condensed', Arial, Helvetica ,sans-serif;
+    overflow-x: hidden;
     /* font-weight: bold; */
 
 }
 .navbar {
     font-size: 20px;
-    color: #ef7c8e;
+    color: white;
+    background-color: #ef7c8e;
     min-height: 70px;
     margin-bottom: 0;
     border-radius: 0;
 }
+.nav>li>a {
+    padding-bottom: 10px;
+}
 .nav>li>a:focus, .nav>li>a:hover, .nav>li.active>a{
     color: #b6e2d3;
     font-weight: bold;
+    border-radius:3px;
+    
 }
 a{
-    color: #ef7c8e;
+    color: white;
 }
 
   
@@ -38,8 +46,11 @@ a{
   footer {
     background-color: #ef7c8e;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 40px;
   }
+  button.navbar-toggle span.icon-bar{
+        background-color: white;
+    }
 .item{
     max-height: 500px;
 }
@@ -74,12 +85,65 @@ a{
 .call-us{
     font-size: 17px;
     font-weight: bold;
-    padding: 0 5px;
+    padding: 0 25px;
+}
+.footer{
+    padding:15px 15px 0 15px;
+}
+.made-by{
+    padding: 5px;
+}
+.chidera_fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 15px;
+    height: 16px;
+    margin: 2px 7px 2px 7px;
+    border-radius: 7px;
+}
+
+/* Add a hover effect*/
+.chidera_fa:not(.chidera_fa-comments):hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.chidera_fa-facebook, .chidera_fa-linkedin {
+    color: #0077B5;
+}
+
+/* Instagram */
+.chidera_fa-instagram {
+    color: #FA0867;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+/* Github */
+.chidera_fa-github{
+    color: #ffffff;
+}
+/* Twitter */
+.chidera_fa-twitter{
+    color:#1DA1F2;
 }
 /* Hide the carousel text when the screen is less than 600 pixels wide */
 @media (max-width: 600px) {
   .carousel-caption {
     display: none; 
+  }
+  .made-by{
+      text-align: center;
+  }
+  .footer{
+      font-size: 18px;
+  }
+  .chidera_fa {
+    margin: 2px 3px 7px 3px;
+  }
+  .social{
+      margin: 7px;
   }
 }
 </style>  
@@ -104,11 +168,13 @@ a{
             <li><a href="#">Book Now</a></li>
       </ul>      
     </div>
+  </div>
+</nav>
+<div>
     <ul class="nav navbar-nav navbar-right">
         <li class="call-us">Call 07059768686</li>
     </ul>
-  </div>
-</nav>
+</div>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators
@@ -199,9 +265,20 @@ a{
   </div>
 </div>
 <footer class="text-center">
-        <svg class="divider1" preserveaspectradio="none" viewBox="0 0 1080 46"><polygon x="0" y="0" points="0 0 1080 46 1080 0"></polygon></svg>
-
-  <p>Footer Text</p>
+    <svg class="divider1" preserveaspectradio="none" viewBox="0 0 1080 46"><polygon x="0" y="0" points="0 0 1080 46 1080 0"></polygon></svg>
+    <div class="row footer">
+        <div class="col-sm-3 col-xs-6 social">
+            <h4>Follow us</h4>
+            <a href="" class="fa fa-facebook chidera_fa chidera_fa-facebook"></a>
+            <a href="" class="fa fa-instagram chidera_fa chidera_fa-instagram"></a>
+            <a href="" class="fa fa-github chidera_fa chidera_fa-github"></a>
+            <a href="" class="fa fa-twitter chidera_fa chidera_fa-twitter"></a>
+            <a href="" class="fa fa-linkedin chidera_fa chidera_fa-linkedin"></a>
+        </div>
+    </div>
+    <div class="made-by text-right">
+        <p>&copy; Made with &hearts; by Olibie Chidera: Swisel</p>
+    </div>
 </footer>
 
 </body>
