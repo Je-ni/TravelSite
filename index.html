@@ -24,14 +24,15 @@ body{
     min-height: 70px;
     margin-bottom: 0;
     border-radius: 0;
-  }
+}
+.nav>li>a:focus, .nav>li>a:hover, .nav>li.active>a{
+    color: #b6e2d3;
+    font-weight: bold;
+}
 a{
     color: #ef7c8e;
 }
-.nav>li>a:focus, .nav>li>a:hover{
-    background-color:#fae8e0;
-    color: #b6e2d3;
-}
+
   
   /* Add a gray background color and some padding to the footer */
   footer {
@@ -64,6 +65,17 @@ a{
     position: absolute;
     fill: white;
 }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.call-us{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 5px;
+}
 /* Hide the carousel text when the screen is less than 600 pixels wide */
 @media (max-width: 600px) {
   .carousel-caption {
@@ -90,8 +102,11 @@ a{
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Book Now</a></li>
-      </ul>
+      </ul>      
     </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="call-us">Call 07059768686</li>
+    </ul>
   </div>
 </nav>
 
@@ -155,15 +170,29 @@ a{
 <div class="container text-center">    
   <h3>Top Destinations</h3><br>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 card">
       <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
       <p>Current Project</p>
     </div>
-    <div class="col-sm-4"> 
+    <div class="col-sm-4 card"> 
       <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
       <p>Project 2</p>    
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 card">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        <p>Current Project</p>
+    </div>    
+  </div>
+  <div class="row">
+    <div class="col-sm-4 card">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        <p>Current Project</p>
+    </div>
+    <div class="col-sm-4 card"> 
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        <p>Project 2</p>    
+    </div>
+    <div class="col-sm-4 card">
         <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
         <p>Current Project</p>
     </div>    
