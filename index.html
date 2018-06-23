@@ -128,6 +128,11 @@ a{
 .chidera_fa-twitter{
     color:#1DA1F2;
 }
+
+.contact a:not(:last-child){
+        display: block;
+        margin-bottom: 10px;
+    }
 /* Hide the carousel text when the screen is less than 600 pixels wide */
 @media (max-width: 600px) {
   .carousel-caption {
@@ -267,13 +272,19 @@ a{
 <footer class="text-center">
     <svg class="divider1" preserveaspectradio="none" viewBox="0 0 1080 46"><polygon x="0" y="0" points="0 0 1080 46 1080 0"></polygon></svg>
     <div class="row footer">
-        <div class="col-sm-3 col-xs-6 social">
+        <div class="col-sm-4 col-xs-6 social">
             <h4>Follow us</h4>
             <a href="" class="fa fa-facebook chidera_fa chidera_fa-facebook"></a>
             <a href="" class="fa fa-instagram chidera_fa chidera_fa-instagram"></a>
             <a href="" class="fa fa-github chidera_fa chidera_fa-github"></a>
             <a href="" class="fa fa-twitter chidera_fa chidera_fa-twitter"></a>
             <a href="" class="fa fa-linkedin chidera_fa chidera_fa-linkedin"></a>
+        </div>
+        <div class="col-sm-4 col-xs-6 contact">
+            <h4>Company Info</h4>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>                                               
+            <a href="#">Help</a>
         </div>
     </div>
     <div class="made-by text-right">
