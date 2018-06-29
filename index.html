@@ -1,296 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Abel|Encode+Sans+Condensed|Libre+Baskerville" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TravelApp</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-body{
-    font-family: 'Libre Baskerville', 'Encode Sans Condensed', Arial, Helvetica ,sans-serif;
-    overflow-x: hidden;
-    /* font-weight: bold; */
+  <div class="Head">
 
-}
-.navbar {
-    font-size: 20px;
-    color: white;
-    background-color: #ef7c8e;
-    min-height: 70px;
-    margin-bottom: 0;
-    border-radius: 0;
-}
-.nav>li>a {
-    padding-bottom: 10px;
-}
-.nav>li>a:focus, .nav>li>a:hover, .nav>li.active>a{
-    color: #b6e2d3;
-    font-weight: bold;
-    border-radius:3px;
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand ml-4" href="#">TravelApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link mr-4" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-4" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-4" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link mr-4" href="#">Gallery</a>
+                  </li>
+            <li class="nav-item">
+              <a class="nav-link mr-4 " href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<!-- END OF NAV -->
+
+    <div class="">
+            <section id="hero" class="mb-0 ">
+                    <div class=" mb-0 hero text-white">
+                      <div class="container p-5">
+                        <div class="mx-5 mt-3">
+                          <p class="font-weight-bold text" style="line-height:80px; font-size: 64px"> We Make <br>Travelling <br>Awesome </p>
+                          <p class=" " style="line-height:1px; font-size: 14px ">CREATING MEMORIES ON EACH JOURNEY</p>
+                          <div class="d-flex justify-content-between" style="width:40%">
+                            <a href="#">
+                              <button type="button" class="btn bg-white px-5 py-2 font-weight-bold btn-rounded btn-hover-purple">Explore</button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  
+    </div>
+</div>
+<!-- End of Section One -->
+
+<div class="section_two">
+    <p class="text-center mt-5 hero_two">WHY WE ARE THE BEST</p>
+    <p class="hero_three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, 
+        </p>
+
+        <div class="row flex-container">
+                <div class="card-deck ">
+                        <div class="card card-one">
+                          <img class="card-img-top" src="img/Group 2.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">World Explore</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                           
+                          </div>
+                        </div>
+                        <div class="card card-two">
+                          <img class="card-img-top" src="img/Group 2.1.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Amazing Tours</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          
+                          </div>
+                        </div>
+                        <div class="card  card-three">
+                          <img class="card-img-top" src="img/Group 2 (1).png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Happy Customers</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                           
+                          </div>
+                        </div>
+                        <div class="card  card-four">
+                                <img class="card-img-top" src="img/sun-umbrella.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Our Cruise</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                
+                                </div>
+                              </div>
+                      </div>
+
+        </div>
+
+        <!-- End of section Two -->
+
+        <div class="row mt-5">
+
+            <div class="col-md-3">
+                    <img src="img/Rectangle 8.png" alt="" >
+            </div> 
+
+                        <div class="col-md-3">
+                                <img src="img/Rectangle 8.1.png" alt="" >
+                        </div>
+
+                            <div class="col-md-3">
+                                    <img src="img/Rectangle 8.2.png" alt="" >
+                            </div>
+
+                                <div class="col-md-3">
+                                        <img src="img/Rectangle 8.3.png" alt="" >
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                        <img src="img/Rectangle 8.4.png" alt="" >
+                                </div> 
+            
+                            <div class="col-md-3">
+                                    <img src="img/Rectangle 8.5.png" alt="" >
+                            </div>
+            
+                    <div class="col-md-3">
+                            <img src="img/Rectangle 8.6.png" alt="" >
+                    </div>
+            
+            <div class="col-md-3">
+                    <img src="img/Rectangle 8.7.png" alt="" >
+            </div>
+
+        </div>
+
+  <!-- End of Section Three -->
+
+    <div class="section_three">
+        <p class="text-center mt-5 hero_two">OUR PATNERS & INVESTORS</p>
+        <p class="hero_three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, </p>
+         
+        <div class="img-two ">
+
+            <div class="column">
+                    <img src="img/air-canada.png" alt="Air Canada">
+            </div>
+
+            <div class="column mt-3">
+                    <img src="img/download.png" alt="Fly Emirate">
+            </div>
+
+            <div class="column">
+                    <img src="img/images.png" alt="Qatar Airways">
+            </div>
+
+            <div class="column">
+                    <img src="img/images-1.png" alt="Qantas">
+            </div>
+
+            <div class="column">
+                    <img src="img/images (1).png" alt="Virgin Atlantic" style="height: 120px">
+            </div>
+         </div>
+
+
+    </div>
+    <!-- End of SectionFour  -->
+
+
+
+         <!-- Carousel will be here  -->
+
+
+
+
+    <!-- Footer  -->
+    <footer class="mt-5">
+            <div id="get-started">
+                <div class="container">
+                    <div class="get-started row ">
+                    <div class="col-md-9 col-12">
+                        <!-- <h3>Want to be a Social Impact Agent?</h3> -->
+                    </div>
+                    <div class="col-md-3 col-12">
+                            <button type="button" class="btn button"><a class="view" href="#" >Get Started</a></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+             <div id="foot">
+              <div class="container">
+                <div class="foot row">
+                 <div class="col-md-3 col-6">
+                <h5>Browse Categories</h5>
+                <p class="footer-one">
+                 <p class="one"> <a href="#">All issues</a></p>
+                 <p class="one"> <a href="#"> Trending Campaigns</a></p>
+                 <p class="one"> <a href="#">Nearest Airports </a></p>
+                 <p class="one"> <a href="#"> Nearest Car-Part</a> </p>
+                 <p class="one"><a href="#"> Nearest Train Station </a></p>                  
+
+                </p>
+
+                <h5>Follow Us</h5>
+
+            </div>
+
+            <div class="col-md-3 col-6">
+                <h5>Mission</h5>
+                <p class="footer-one">
+                    <p class="one"><a href=""> Our Story</a> </p>
+                    <p class="one"><a href="">  Team</a></p>
+                    <p class="one"><a href=""> How it works</a> </p>
+                    <p class="one"><a href=""> Video Series </a> </p>                
+                </p>
+            </div>
+
+            <div class="col-md-3 col-6">
+                    <h5>Stay Updated</h5>
+                    <p class="footer-one">
+                            <p class="one"><a href=""> Blog</a> </p>
+                            <p class="one"><a href="">New Stories</a></p>
+                    </p>
     
-}
-a{
-    color: white;
-}
+            </div>
 
-  
-  /* Add a gray background color and some padding to the footer */
-  footer {
-    background-color: #ef7c8e;
-    padding: 0;
-    margin-top: 40px;
-  }
-  button.navbar-toggle span.icon-bar{
-        background-color: white;
-    }
-.item{
-    max-height: 500px;
-}
-/* .carousel-indicators, .carousel-caption {
-    padding: 20px;   
-} */
-.carousel-inner img {
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-    min-height:200px;
-}
-.divider, .divider1{
-    position: relative;
-    overflow: visible !important;
-}
-.divider polygon{
-    position: absolute;
-    fill: white;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-}
-.divider1 polygon{
-    position: absolute;
-    fill: white;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-.call-us{
-    font-size: 17px;
-    font-weight: bold;
-    padding: 0 25px;
-}
-.footer{
-    padding:15px 15px 0 15px;
-}
-.made-by{
-    padding: 5px;
-}
-.chidera_fa {
-    padding: 5px;
-    font-size: 20px;
-    width: 15px;
-    height: 16px;
-    margin: 2px 7px 2px 7px;
-    border-radius: 7px;
-}
+            <div class="col-md-3 col-6">
+                    <h5>Help</h5>
+                    <p class="one">
+                        Ask the Community<br>
+                        FAQs <br>
+                    </p>
+                    <h6>Location</h6>
+                    <p class="two">
+                        Genesys Tech Hub<br>
+                       KM 7,Port Harcout Street <br>
+                      Enugu<br>
 
-/* Add a hover effect*/
-.chidera_fa:not(.chidera_fa-comments):hover {
-    opacity: 0.7;
-}
+                    </p>
+            </div>
 
-/* Set a specific color for each brand */
-
-/* Facebook */
-.chidera_fa-facebook, .chidera_fa-linkedin {
-    color: #0077B5;
-}
-
-/* Instagram */
-.chidera_fa-instagram {
-    color: #FA0867;
-    padding-left: 4px;
-    padding-top: 4px;
-}
-/* Github */
-.chidera_fa-github{
-    color: #ffffff;
-}
-/* Twitter */
-.chidera_fa-twitter{
-    color:#1DA1F2;
-}
-
-.contact a:not(:last-child){
-        display: block;
-        margin-bottom: 10px;
-    }
-/* Hide the carousel text when the screen is less than 600 pixels wide */
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none; 
-  }
-  .made-by{
-      text-align: center;
-  }
-  .footer{
-      font-size: 18px;
-  }
-  .chidera_fa {
-    margin: 2px 3px 7px 3px;
-  }
-  .social{
-      margin: 7px;
-  }
-}
-</style>  
-
-<nav class="navbar">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Book Now</a></li>
-      </ul>      
-    </div>
-  </div>
-</nav>
-<div>
-    <ul class="nav navbar-nav navbar-right">
-        <li class="call-us">Call 07059768686</li>
-    </ul>
+        </div>
+         <hr>
+         <p class="foot"> &copy; 2018  We are your Best Travelling Agency</p>
+     </div>
+    </div>   
+      </footer>
 </div>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol> -->
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="https://i.imgur.com/G3I1Uo6.jpg" alt="Coozy Twin-Bed Room">
-        <div class="carousel-caption">
-          <h3>Book Now</h3>
-          <p>Stay in the Most Exotic Hotels At Affordable Cost</p>
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
-        <div class="carousel-caption">
-          <h3>Book Now</h3>
-          <p>Travel to the Best Places with Amazing Deals</p>
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
-        <div class="carousel-caption">
-            <h3>Book Now</h3>
-            <p>Save UpTo 40% on Hotel and Flight Deals</p>
-        </div>      
-        </div>
-
-      <div class="item">
-        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
-        <div class="carousel-caption">
-            <h3>Book Now</h3>
-            <p>Get the Cheapest Flight Deals</p>
-        </div>      
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
-<svg class="divider" preserveaspectradio="none" viewBox="0 0 1080 46"><polygon x="0" y="0" points="0 46 1080 46 0 0"></polygon></svg>
-
-  
-<div class="container text-center">    
-  <h3>Top Destinations</h3><br>
-  <div class="row">
-    <div class="col-sm-4 card">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Current Project</p>
-    </div>
-    <div class="col-sm-4 card"> 
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Project 2</p>    
-    </div>
-    <div class="col-sm-4 card">
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        <p>Current Project</p>
-    </div>    
-  </div>
-  <div class="row">
-    <div class="col-sm-4 card">
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        <p>Current Project</p>
-    </div>
-    <div class="col-sm-4 card"> 
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        <p>Project 2</p>    
-    </div>
-    <div class="col-sm-4 card">
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        <p>Current Project</p>
-    </div>    
-  </div>
-</div>
-<footer class="text-center">
-    <svg class="divider1" preserveaspectradio="none" viewBox="0 0 1080 46"><polygon x="0" y="0" points="0 0 1080 46 1080 0"></polygon></svg>
-    <div class="row footer">
-        <div class="col-sm-4 col-xs-6 social">
-            <h4>Follow us</h4>
-            <a href="" class="fa fa-facebook chidera_fa chidera_fa-facebook"></a>
-            <a href="" class="fa fa-instagram chidera_fa chidera_fa-instagram"></a>
-            <a href="" class="fa fa-github chidera_fa chidera_fa-github"></a>
-            <a href="" class="fa fa-twitter chidera_fa chidera_fa-twitter"></a>
-            <a href="" class="fa fa-linkedin chidera_fa chidera_fa-linkedin"></a>
-        </div>
-        <div class="col-sm-4 col-xs-6 contact">
-            <h4>Company Info</h4>
-            <a href="#">Terms and Conditions</a>
-            <a href="#">Privacy Policy</a>                                               
-            <a href="#">Help</a>
-        </div>
-    </div>
-    <div class="made-by text-right">
-        <p>&copy; Made with &hearts; by Olibie Chidera: Swisel</p>
-    </div>
-</footer>
-
+<!-- Bootstrap JS, PopperJS and JQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
